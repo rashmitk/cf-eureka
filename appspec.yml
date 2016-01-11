@@ -4,7 +4,7 @@ files:
   - source: cf-eureka-0.0.1-SNAPSHOT.jar
     destination: /home/ec2-user/
   - source: start_eureka.sh
-    destination: /springcloud/
+    destination: /home/ec2-user/
 hooks:
   ApplicationStart:
     - location: start_eureka.sh
