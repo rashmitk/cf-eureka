@@ -2,9 +2,11 @@ version: 0.0
 os: linux
 files:
   - source: cf-eureka-0.0.1-SNAPSHOT.jar
+    destination: /home/ec2-user/
+  - source: start_eureka.sh
     destination: /springcloud/
 hooks:
   ApplicationStart:
-    - location: ./start_eureka.sh
+    - location: start_eureka.sh
       timeout: 300
       runas: root
